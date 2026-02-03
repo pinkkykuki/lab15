@@ -8,7 +8,7 @@ int main(){
 	int *x = &a;
 	char *y = &b;
 	int **z = &x;
-	cout << a << " " << b << " " << c << " " << x << " " << &y << " " << z << endl;
+	cout << a << " " << b << " " << c << " " << x << " " << (void*)y << " " << z << endl;
 	cout << &a << " " << (void*)&b << " " << (void*)&c << " " << &x << " " << (void*)&y << " " << &z << endl;
 	c = 'F';
 	cout << a << " " << b << " " << c << " " << x << " " << &y << " " << z << endl;
